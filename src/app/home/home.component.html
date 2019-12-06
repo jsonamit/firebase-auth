@@ -1,0 +1,11 @@
+
+
+<div *ngIf="!(authenticationService.userData | async)">
+    <input type="text" [(ngModel)]="email" placeholder="email">
+    <input type="password" [(ngModel)]="password" placeholder="password">
+
+    <button (click)="signUp()">Sign Up</button>
+
+    <button (click)="signIn()">Login</button>
+</div>
+
